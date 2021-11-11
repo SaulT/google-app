@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import logo from './googlelogo.png';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="main">
+      <div className="divLogo">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+      <div className="divBusqueda">
+        <input className="textoBuscar"></input>
+      </div>
+      <div className="divBotones">
+        <button className="botonGris">Buscar con Google</button>
+        <button className="botonGris">Me siento con suerte</button>
+      </div>
+      <div className="divIdioma">
+        Ofrecido por Google en:  <a href="#">English</a>    <a href="#">Quechua</a> 
+      </div>
     </div>
   );
 }
